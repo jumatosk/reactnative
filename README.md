@@ -3,7 +3,7 @@
 <ul>
   <h3>Projetos realizados</h3>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/todolist'>ToDo List</a></li>
-  <li>Clone Nubank</li>
+  <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/nubank'>Clone Nubank</a></li>
 </ul>
 
 <ul>
