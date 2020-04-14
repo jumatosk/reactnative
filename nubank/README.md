@@ -3,3 +3,4 @@
 >Este projeto é um clone simples com algumas das estilizações e animações do Nubank.
 
 <h4>App em funcionamento</h4>
+! [] (gif.gif)
