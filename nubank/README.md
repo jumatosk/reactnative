@@ -1,6 +1,6 @@
 <h2>Clone do Nubank</h2>
 
-# Este projeto é um clone simples com algumas das estilizações e animações do Nubank.
+<h2>Este projeto é um clone simples com algumas das estilizações e animações do Nubank.</h2>
 
 
 ![GIF](https://github.com/jumatosk/react-natice-practice/blob/master/nubank/gif.gif)
