@@ -2,7 +2,7 @@
 
 <ul>
   <h3>Projetos realizados</h3>
-  <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/todolist'>ToDo List</a></li>
+  <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/semana-omni-stack-11'>Be The Hero</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/nubank'>Clone Nubank</a></li>
 </ul>
 
@@ -10,6 +10,7 @@
   <h3>Tecnologias Utilizadas</h3>
   <li><a href='https://expo.io/'>Expo</a></li>
   <li><a href='https://reactnative.dev/'>React Native</a></li>
+  <li><a href='https://nodejs.org/en/download/'>Node.js</a></li>
 </ul>
 
 <ul>
