@@ -11,7 +11,6 @@ export default class Chat extends React.Component {
     get user() {
         return {
             _id: Firebase.uid,
-            // name: this.props.navigation.state.params.name
         }
     }
 
