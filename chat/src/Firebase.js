@@ -9,14 +9,7 @@ class Firebase {
     init = () => {
         if (!firebase.apps.length) {
             firebase.initializeApp({
-                apiKey: "AIzaSyDxm07KTRg70BpqqV2ekYh9DHFWLNv7VQk",
-                authDomain: "chat-b8ec0.firebaseapp.com",
-                databaseURL: "https://chat-b8ec0.firebaseio.com",
-                projectId: "chat-b8ec0",
-                storageBucket: "chat-b8ec0.appspot.com",
-                messagingSenderId: "693959508793",
-                appId: "1:693959508793:web:1dac6733456f9207251ee8",
-                measurementId: "G-K3XDBSQHXH"
+                //your firebaseconfig here
             })
         }
     }
