@@ -3,6 +3,8 @@ import { ActivityIndicator } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import Icon from '@expo/vector-icons/MaterialCommunityIcons'
 
+import * as Location from 'expo-location'
+
 import {
     Container,
     WeatherInformation,
@@ -25,30 +27,37 @@ export default ({ navigation, route }) => {
     const [weather, setWeather] = useState({})
     const [error, setError] = useState(false)
     const [city, setCity] = useState()
-    const [loading, setLoading] = useState(true)
-    const search = route.params.searchText
-
-    const getWeatherData = async () => {
-        try {
-            const response = await api.get(`?q=${search}&units=metric&appid=${weatherKey.apiKey}`)
-
-            const {
-                main,
-                name,
-            } = response.data
-
-            setWeather(main)
-            setCity(name)
-
-        } catch (error) {
-           setError(true)
-        }
-        setLoading(false)
-    }
+    const [loading, setLoading] = useState(false)
+    const [permission, setPermission] = useState('')
 
     useEffect(() => {
-        getWeatherData()
+        (async () => {
+            let { status } = (await Location.getPermissionsAsync())
+            setPermission(status)
+        })()
     }, [])
+
+    // const getWeatherData = async () => {
+    //     try {
+    //         const response = await api.get(`?q=${search}&units=metric&appid=${weatherKey.apiKey}`)
+
+    //         const {
+    //             main,
+    //             name,
+    //         } = response.data
+
+    //         setWeather(main)
+    //         setCity(name)
+
+    //     } catch (error) {
+    //        setError(true)
+    //     }
+    //     setLoading(false)
+    // }
+
+    // useEffect(() => {
+    //     getWeatherData()
+    // }, [])
 
     return (
         <Container>

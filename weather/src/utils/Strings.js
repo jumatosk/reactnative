@@ -1,6 +1,7 @@
 const STRINGS = {
-    search_placeholder: 'Informe o nome da cidade',
-    search_error: 'Algo deu errado...tente novamente!'
+    HOME_TITLE: 'Weather',
+    SEARCH_PLACEHOLDER: 'Informe o nome da cidade',
+    SEARCH_ERROR: 'Algo deu errado...tente novamente!'
 }
 
 export default STRINGS

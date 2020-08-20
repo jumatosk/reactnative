@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar'
+
+import * as Location from 'expo-location'
 
 import GLOBAL from './src/global'
 import Main from './src/routes/route'
 
-export default () => {
+const AppContainer = () => {
   return (
     <>
-      <StatusBar backgroundColor={GLOBAL.statusBar}/>
-      <Main />
+      <StatusBar backgroundColor={GLOBAL.statusBar} />
+      <App />
     </>
   )
 }
+
+const App = () => {
+  const [errorMsg, setErrorMsg] = useState(null)
+
+  useEffect(() => {
+    try {
+      (async () => {
+        let { status } = await Location.requestPermissionsAsync()
+
+        if (status !== 'granted') {
+          setErrorMsg('Permission denied.')
+        }
+      })()
+    } catch (error) {
+      console.log(error)
+    }
+  }, [])
+
+  return <Main />
+}
+
+export default AppContainer
