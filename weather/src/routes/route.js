@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import Home from '../screens/Home'
 import Weather from '../screens/Weather'
-import { color } from 'react-native-reanimated'
+import GLOBAL from '../global'
 
 const Stack = createStackNavigator()
 
@@ -15,8 +15,11 @@ export default () => {
                 <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
                 <Stack.Screen 
                     name="Weather" 
-                    component={Weather} 
-                    options={{headerShown: false}}
+                    component={Weather}
+                    options={{
+                        headerTintColor: `${GLOBAL.header.back}`,
+                        headerTitleAlign: `${GLOBAL.header.titleAlign}`,
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>

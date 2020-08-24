@@ -4,23 +4,27 @@ import {
     Container,
     ContainerImg,
     Illustration,
+} from './styles'
+import {
     ContainerButton,
     Button,
     Title
-} from './styles'
+} from '../../components/Button'
 import weatherImg from '../../assets/weather.png'
+
 import STRINGS from '../../utils/Strings'
+import GLOBAL from '../../global'
 
 export default ({ navigation }) => {
     return (
         <Container>
             <ContainerImg>
-                <Illustration source={weatherImg} resizeMode='contain'/>
+                <Illustration source={weatherImg} resizeMode={GLOBAL.image.resizeMode} />
             </ContainerImg>
             <ContainerButton>
                 <Button onPress={() => navigation.navigate('Weather')}>
                     <Title>{STRINGS.HOME_TITLE}</Title>
-                    <Icon name='login' size={30} color='#EAEDF1'/>
+                    <Icon name='login' size={GLOBAL.icon.size} color={GLOBAL.icon.color} />
                 </Button>
             </ContainerButton>
         </Container>

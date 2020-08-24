@@ -9,7 +9,10 @@ import Main from './src/routes/route'
 const AppContainer = () => {
   return (
     <>
-      <StatusBar backgroundColor={GLOBAL.statusBar} />
+      <StatusBar
+        backgroundColor={GLOBAL.statusBar.color}
+        style={GLOBAL.statusBar.style}
+      />
       <App />
     </>
   )
