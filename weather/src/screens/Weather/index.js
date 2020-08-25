@@ -25,7 +25,6 @@ import {
 } from '../../components/Button'
 
 import weatherInformation from '../../assets/information.png'
-import temperatureBackground from '../../assets/weatherBackground.png'
 import warningImg from '../../assets/warning.png'
 
 import STRINGS from '../../utils/Strings'
