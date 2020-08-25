@@ -16,6 +16,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "io.github.jumatosk",
+      "versionCode": 1
+    },
     "ios": {
       "supportsTablet": true
     },
