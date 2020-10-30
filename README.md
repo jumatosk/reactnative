@@ -7,6 +7,7 @@
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/nubank'>Clone Nubank</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/flatlist'>FlatList</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/weather'>Weather</a></li>
+  <li><a href='https://github.com/jumatosk/reactnative/tree/master/kinvoTest'>Kinvo Challenge</a></li>
 </ul>
 
 <ul>
