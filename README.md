@@ -3,7 +3,7 @@
 <ul>
   <h3>Projetos realizados</h3>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/chat'>Chat (firebase)</a></li>
-  <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/semana-omni-stack-11'>Be The Hero</a></li>
+  <li><a href='https://github.com/jumatosk/reactnative/tree/master/beTheHero'>Be The Hero</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/nubank'>Clone Nubank</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/flatlist'>FlatList</a></li>
   <li><a href='https://github.com/jumatosk/react-natice-practice/tree/master/weather'>Weather</a></li>
